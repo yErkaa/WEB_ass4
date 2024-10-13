@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Basketball Fan Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h1>Welcome to the Basketball Fan Page!</h1>
+        <p>Stay updated on the latest games, highlights, and stats.</p>
+        <hr>
+
+        <!-- Form for Signing Up -->
+        <h2>Sign up for Updates</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Create a password" required minlength="6">
+                <div class="invalid-feedback">Password must be at least 6 characters long.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Website created by Aldongar Yerkin</p>
+    </footer>
+
+    <script src="formValidation.js"></script>
+</body>
+</html>
